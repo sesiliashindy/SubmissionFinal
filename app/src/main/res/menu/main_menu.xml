@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_settings"
+        android:title="@string/settings"
+        android:icon="@drawable/ic_settings_white_24dp"
+        app:showAsAction="always">
+
+        <menu>
+
+            <item
+                android:id="@+id/language_settings"
+                android:title="@string/language_settings"
+                app:showAsAction="never"/>
+
+
+            <item
+                android:id="@+id/menu_reminder"
+                app:showAsAction="never"
+                android:title="@string/alarm_setting" />
+
+        </menu>
+
+    </item>
+
+</menu>

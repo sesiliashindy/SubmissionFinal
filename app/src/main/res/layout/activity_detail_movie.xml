@@ -1,0 +1,150 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            android:padding="8dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/movie_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="parallax"/>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:layout_collapseMode="pin" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/layout_margin_start">
+
+            <TextView
+                android:id="@+id/movie_name"
+                android:layout_width="212dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="@dimen/layout_margin_start"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:layout_marginBottom="@dimen/layout_margin_bottom"
+                android:text="@string/judul_movie"
+                android:textColor="@color/textBackground"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.019" />
+
+            <TextView
+                android:id="@+id/movie_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/layout_margin_start"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:text="@string/year"
+                android:textColor="@color/textBackground"
+                app:layout_constraintTop_toBottomOf="@+id/movie_name" />
+
+            <TextView
+                android:id="@+id/movie_vote_judul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/layout_margin_start"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:text="@string/vote_average"
+                android:textColor="@color/textBackground"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/movie_year" />
+
+            <TextView
+                android:id="@+id/movie_vote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/layout_margin_start"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:text="@string/vote_average"
+                android:textColor="@color/textBackground"
+                app:layout_constraintTop_toBottomOf="@+id/movie_vote_judul" />
+
+            <TextView
+                android:id="@+id/movie_language_judul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/layout_margin_start"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:text="@string/Language"
+                android:textColor="@color/textBackground"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/movie_vote" />
+
+            <TextView
+                android:id="@+id/movie_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/layout_margin_start"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:text="@string/Language"
+                android:textColor="@color/textBackground"
+                app:layout_constraintTop_toBottomOf="@+id/movie_language_judul" />
+
+            <TextView
+                android:id="@+id/movie_overview_judul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/layout_margin_start"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:text="@string/overview"
+                android:textColor="@color/textBackground"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/movie_overview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/layout_margin_start"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:text="@string/overview"
+                android:background="@color/back"
+                android:textColor="@color/textBackground"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/movie_overview_judul" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

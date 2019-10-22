@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_movie"
+        android:icon="@drawable/ic_movie_black_24dp"
+        android:title="@string/movies_title" />
+    <item
+        android:id="@+id/navigation_tv_show"
+        android:icon="@drawable/ic_live_tv_black_24dp"
+        android:title="@string/tv_show_title" />
+    <item
+        android:id="@+id/navigation_favorite"
+        android:icon="@drawable/ic_favorite_black_24dp"
+        android:title="@string/favorited" />
+    <item
+        android:id="@+id/navigation_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="@string/search" />
+
+</menu>

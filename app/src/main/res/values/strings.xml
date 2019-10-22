@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">SubmissionFinal</string>
+    <string name="language_settings">Languange Settings</string>
+    <string name="movies_title">Movie</string>
+    <string name="tv_show_title">Tv Show</string>
+    <string name="desc">Picture</string>
+    <string name="judul_movie">Movie Title</string>
+    <string name="year">Year</string>
+    <string name="overview">Overview</string>
+    <string name="vote_average">Vote Average</string>
+    <string name="Language">Language</string>
+    <string name="favorited">Favorited</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="favourite_list">List Favorite</string>
+    <string name="empty_text">Empty Text</string>
+    <string name="catalogue_movies">Favorite Movie</string>
+    <string name="empty_content">empty content</string>
+
+    <string name="notification">Alarm</string>
+    <string name="key_reminder_daily">reminder_daily</string>
+    <string name="key_reminder_upcoming">reminder_upcoming</string>
+
+    <string name="daily_reminder_title">Daily Reminder Notification</string>
+    <string name="daily_reminder_summary">Turn on/off daily reminder</string>
+
+    <string name="upcoming_reminder_title">Upcoming Reminder Notification</string>
+    <string name="upcoming_reminder_summary">Turn on/off upcoming reminder</string>
+
+    <string name="repeat_notif">Check Catalogue Movie &#8230;</string>
+    <string name="remainder">Remainder</string>
+    <string name="settings">setting</string>
+    <string name="alarm_setting">Alarm</string>
+
+    <string name="movie_search">Search Movie</string>
+    <string name="search">Search</string>
+    <string name="tv_search">Search TvShow</string>
+
+</resources>
